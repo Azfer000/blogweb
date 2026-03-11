@@ -1,0 +1,37 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,821913,(e,t,r)=>{"use strict";var o=e.r(711746).__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;r.c=function(e){return o.H.useMemoCache(e)}},647468,(e,t,r)=>{"use strict";t.exports=e.r(821913)},973736,e=>{"use strict";var t=e.i(276528),r=e.i(647468),o=e.i(711746);let i=(0,o.createContext)(null);e.s(["SiteShellProvider",0,e=>{let o,n=(0,r.c)(3),{value:s,children:l}=e;return n[0]!==l||n[1]!==s?(o=(0,t.jsx)(i.Provider,{value:s,children:l}),n[0]=l,n[1]=s,n[2]=o):o=n[2],o},"useSiteShellContext",0,()=>(0,o.useContext)(i)])},414255,e=>{"use strict";var t=e.i(276528),r=e.i(647468),o=e.i(711746);let i="--demo-mode-banner-height",n=`
+	:root {
+		${i}: 48px;
+	}
+	body {
+		padding-top: var(${i}, 48px);
+	}
+	header[style*="position: fixed"],
+	header[style*="position:fixed"],
+	header[style*="position: sticky"],
+	header[style*="position:sticky"] {
+		top: var(${i}, 48px) !important;
+	}
+	.demo-mode-banner {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: white;
+		padding: 12px 24px;
+		box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+		z-index: 9999;
+		font-family: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	}
+	.demo-mode-banner-text {
+		display: flex;
+		gap: 4px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #374151;
+		margin: 0;
+		text-align: center;
+	}
+`;e.s(["DemoModeBanner",0,()=>{let e,s,l,a,c=(0,r.c)(4),d=(0,o.useRef)(null);return c[0]===Symbol.for("react.memo_cache_sentinel")?(e=()=>{let e=document.documentElement;e.style.setProperty(i,"48px");let t=d.current;if(!t)return()=>{e.style.removeProperty(i)};let r=()=>{let r=Math.ceil(t.getBoundingClientRect().height);r>0&&e.style.setProperty(i,`${r}px`)};if(r(),"undefined"==typeof ResizeObserver)return()=>{e.style.removeProperty(i)};let o=new ResizeObserver(r);return o.observe(t),()=>{o.disconnect(),e.style.removeProperty(i)}},s=[],c[0]=e,c[1]=s):(e=c[0],s=c[1]),(0,o.useEffect)(e,s),c[2]===Symbol.for("react.memo_cache_sentinel")?(l=(0,t.jsx)("style",{children:n}),c[2]=l):l=c[2],c[3]===Symbol.for("react.memo_cache_sentinel")?(a=(0,t.jsxs)(t.Fragment,{children:[l,(0,t.jsx)("div",{ref:d,className:"demo-mode-banner",children:(0,t.jsxs)("p",{className:"demo-mode-banner-text",children:[(0,t.jsx)("span",{style:{fontWeight:600},children:"This website is in demo mode."}),(0,t.jsx)("span",{children:"Publish your website to remove this banner."})]})})]}),c[3]=a):a=c[3],a}])}]);
